@@ -1,0 +1,166 @@
+/* GLOBAL */
+* {
+    margin: 0;
+    
+}
+body {
+    
+    background: #fff9ec;
+    font-family: Arial, sans-serif;
+}
+
+/* NAVBAR */
+.navbar {
+    background: #058f33;
+    padding: 20px 0;
+}
+
+.nav-container {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    height: 80px;
+    margin-right: 60px;
+    border-radius: 60%;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 40px;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: white;
+}
+
+.nav-links .active a {
+    background: #0e742c;
+    padding: 6px 12px;
+    border-radius: 4px;
+}
+
+/* CONTENT */
+.content-container {
+    width: 85%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+    padding: 40px 0;
+}
+
+.image-box {
+    text-align: center;
+}
+
+.logo-large {
+    width: 80%;
+}
+
+/* ABOUT SECTION */
+.about-box {
+    background: #2fb464;
+    color: white;
+    padding: 25px;
+    border-radius: 20px;
+    font-size: 26px;
+}
+
+.about-box h2 {
+    margin-top: 0;
+}
+
+/* CARDS */
+.card {
+    background: #1fa64c;
+    color: white;
+    padding: 25px;
+    border-radius: 20px;
+}
+
+.mission {
+    grid-column: 1 / 2;
+}
+
+.vision {
+    grid-column: 2 / 3;
+}
+
+/* BUTTON */
+.button-container {
+    grid-column: 1 / -1;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.people-btn {
+    display: inline-block;
+    padding: 12px 30px;
+    background: #1fa64c;
+    color: white;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+}
+
+/* FOOTER */
+footer {
+    border-top: 1px solid #c4c4c4;
+    padding: 25px 0;
+    margin-top: 40px;
+}
+
+.footer-container {
+    width: 90%;
+    margin: auto;
+    text-align: center;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    font-size: 12px;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: #555;
+}
+
+.footer-links .active a {
+    color: #000;
+    font-weight: bold;
+}
+
+.footer-icons {
+    margin: 20px 0 10px;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.footer-text {
+    font-size: 12px;
+    color: #666;
+}
+
+.footer-number {
+    margin-top: 5px;
+    font-size: 13px;
+    color: #058f33;
+}
