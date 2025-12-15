@@ -1,0 +1,170 @@
+body {
+    margin: 0;
+    background: #fff9ec;
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+/* NAVBAR (SAME AS FRANCHISING) */
+.navbar {
+    background: #058f33;
+    padding: 20px 0;
+}
+
+.nav-container {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    height: 80px;
+    margin-right: 60px;
+    border-radius: 60%;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 40px;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: white;
+}
+
+.nav-links .active a {
+    background: #0e742c;
+    padding: 6px 12px;
+    border-radius: 4px;
+}
+
+/* CAREERS SECTION */
+.careers-section {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    padding: 70px 60px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.careers-left {
+    flex: 1;  /* Take equal space */
+    width: 380px;  /* Match the right box width */
+}
+
+.careers-left h1 {
+    color: #2faa45;
+    font-size: 34px;
+}
+
+.careers-text {
+    
+    font-size: 16px;
+}
+
+.careers-logo img {
+    width: 240px;
+}
+
+.careers-right {
+    flex: 1;  /* Take equal space */
+    width: 380px;
+    background: #2faa45;
+    padding: 30px;
+    border-radius: 20px;
+    color: white;
+}
+
+.careers-right h2 {
+    margin-bottom: 15px;
+}
+
+.careers-form input,
+.careers-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    border: none;
+}
+
+.careers-form textarea {
+    height: 90px;
+}
+
+.upload {
+    font-size: 13px;
+    display: block;
+    margin-bottom: 12px;
+}
+
+.upload input {
+    margin-top: 5px;
+}
+
+.careers-form button {
+    background: white;
+    color: #2faa45;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* FOOTER (SAME AS FRANCHISING) */
+footer {
+    border-top: 1px solid #c4c4c4;
+    padding: 25px 0;
+    margin-top: 40px;
+}
+
+.footer-container {
+    width: 90%;
+    margin: auto;
+    text-align: center;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    font-size: 12px;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: #555;
+}
+
+.footer-links .active a {
+    color: #000;
+    font-weight: bold;
+}
+
+.footer-icons {
+    margin: 20px 0 10px;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.footer-text {
+    font-size: 12px;
+    color: #666;
+}
+
+.footer-number {
+    margin-top: 5px;
+    font-size: 13px;
+    color: #058f33;
+}

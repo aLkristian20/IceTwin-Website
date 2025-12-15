@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Franchising – Ice Twin</title>
+    <link rel="stylesheet" href="franchising.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<header class="navbar">
+    <div class="nav-container">
+        <img src="images/logoit.jpg" class="logo">
+
+        <ul class="nav-links">
+            <li><a href="index.html">ABOUT US</a></li>
+            <li><a href="menu.html">MENU</a></li>
+            <li><a href="store-location.html">STORE LOCATION</a></li>
+            <li class="active"><a href="franchising.html">FRANCHISING</a></li>
+            <li><a href="careers.html">CAREERS</a></li>
+            <li><a href="contact.html">CONTACT US</a></li>
+        </ul>
+    </div>
+</header>
+
+<!-- CONTENT -->
+<section class="franchise-section">
+    <h1>Franchising</h1>
+    <p class="subtitle">Indulge in Franchise Delights: Taste the Sweet Rewards!</p>
+
+    <div class="card-wrapper">
+        <img src="images/franchising.jpg" class="franchise-img">
+        <p class="card-title">Ice Twin Ice Cream</p>
+    </div>
+
+    <button class="franchise-btn" onclick="openModal()">Franchise Now</button>
+</section>
+
+<!-- MODAL OVERLAY -->
+<div class="overlay" id="overlay">
+    <div class="modal" id="modal">
+
+        <h2>Get in Touch</h2>
+
+        <input type="text" id="name" placeholder="Full Name">
+        <input type="text" id="address" placeholder="Address">
+        <input type="text" id="contact" placeholder="Contact Number">
+        <input type="email" id="email" placeholder="Your Businessmail Address">
+        <input type="date" id="date">
+        <textarea id="message" placeholder="Send Us Message"></textarea>
+
+
+        <button class="send-btn" onclick="sendMessage()">Send</button>
+
+        <!-- SUCCESS MESSAGE -->
+        <div class="success" id="success">
+            Message Sent!
+        </div>
+    </div>
+</div>
+
+<!-- FOOTER -->
+<footer>
+    <div class="footer-container">
+
+        <ul class="footer-links">
+            <li><a href="index.html">ABOUT US</a></li>
+            <li><a href="menu.html">MENU</a></li>
+            <li><a href="store-location.html">STORE LOCATION</a></li>
+            <li class="active"><a href="franchising.html">FRANCHISING</a></li>
+            <li><a href="careers.html">CAREERS</a></li>
+            <li><a href="contact.html">CONTACT US</a></li>
+        </ul>
+
+        <div class="footer-icons">
+            <i>📘</i>
+            <i>📸</i>
+            <i>🐦</i>
+        </div>
+
+        <p class="footer-text">© 2025 All Rights Reserved.</p>
+        <p class="footer-number">(63) 0948 553 8642</p>
+
+    </div>
+</footer>
+
+<script src="franchising.js"></script>
+</body>
+</html>
