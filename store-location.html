@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Store Location – Ice Twin</title>
     <link rel="stylesheet" href="store-location.css">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css'>
 </head>
 <body>
 
@@ -31,7 +32,7 @@
 
 <!-- MAP -->
 <div class="map-container">
-    <img src="images/" alt="Map">
+    <img src="images/maps.png" alt="Map" class="clickable-img">
 </div>
 
 <!-- HOW TO GET THERE -->
@@ -65,10 +66,16 @@
     <p class="branch-address">📍 85B Crispulo aguinaldo street(front of mega hardware), Salitran 2 Dasmarinas, Cavite</p>
 
     <div class="branch-images">
-        <img src="branch1.jpg">
-        <img src="branch2.jpg">
+        <img src="images/f1 store.jfif" class="clickable-img">
+        <img src="images/f2store.jfif" class="clickable-img">
     </div>
 </section>
+
+<!-- IMAGE LIGHTBOX MODAL -->
+<div id="imageModal" class="image-modal">
+    <span class="close-btn" onclick="closeImageModal()">&times;</span>
+    <img id="modalImage" src="" alt="">
+</div>
 
 <!-- FOOTER -->
 <footer>
@@ -84,16 +91,39 @@
         </ul>
 
         <div class="footer-icons">
-            <i>📘</i>
-            <i>📸</i>
-            <i>🐦</i>
+            <a href="https://www.facebook.com/profile.php?id=61576351366880" target="_blank" aria-label="Facebook"><i class='fa-brands fa-facebook'></i></a>
+            <a href="https://www.instagram.com/your-ice-twin-page" target="_blank" aria-label="Instagram"><i class='fa-brands fa-instagram'></i></a>
+            <a href="mailto:dvocal030@gmail.com" aria-label="Email"><i class='fa-regular fa-envelope'></i></a>
         </div>
 
         <p class="footer-text">© 2025 All Rights Reserved.</p>
-        <p class="footer-number">(63) 0948 553 8642</p>
+        <p class="footer-number"><a href="tel:+639048553642">(63) 0948 553 8642</a></p>
 
     </div>
 </footer>
+
+<script>
+    const clickableImages = document.querySelectorAll('.clickable-img');
+    const modal = document.getElementById('imageModal');
+    const modalImg = document.getElementById('modalImage');
+
+    clickableImages.forEach(img => {
+        img.addEventListener('click', function() {
+            modal.classList.add('active');
+            modalImg.src = this.src;
+        });
+    });
+
+    function closeImageModal() {
+        modal.classList.remove('active');
+    }
+
+    modal.addEventListener('click', function(event) {
+        if (event.target === modal) {
+            closeImageModal();
+        }
+    });
+</script>
 
 </body>
 </html>

@@ -66,20 +66,18 @@ body {
 .icon {
     width: 90px;
     height: 90px;
-    background: #5d673d;
+    background: #d0d0d0;
     border-radius: 50%;
     position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
 }
 
-.icon::after {
-    content: '';
-    position: absolute;
-    top: 25%;
-    left: 30%;
-    width: 35px;
-    height: 35px;
-    background: #fff3e6;
-    border-radius: 50%;
+.icon i {
+    font-size: 50px;
+    color: #999;
 }
 
 .info {
@@ -119,6 +117,11 @@ body {
 .detail {
     font-size: 14px;
     margin-left: 10px;
+}
+
+.detail strong {
+    font-weight: 600;
+    color: #365c2a;
 }
 
 /* FOOTER */
@@ -170,4 +173,15 @@ footer {
     margin-top: 5px;
     font-size: 13px;
     color: #058f33;
+}
+
+.footer-number a {
+    text-decoration: none;
+    color: #058f33;
+    transition: color 0.2s;
+}
+
+.footer-number a:hover {
+    color: #0e742c;
+    text-decoration: underline;
 }

@@ -152,6 +152,7 @@ footer {
     display: flex;
     justify-content: center;
     gap: 15px;
+    align-items: center;
 }
 
 .footer-text {
@@ -163,4 +164,15 @@ footer {
     margin-top: 5px;
     font-size: 13px;
     color: #058f33;
+}
+
+.footer-number a {
+    text-decoration: none;
+    color: #058f33;
+    transition: color 0.2s;
+}
+
+.footer-number a:hover {
+    color: #0e742c;
+    text-decoration: underline;
 }

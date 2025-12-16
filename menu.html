@@ -6,6 +6,7 @@
     <title>Ice Twin Menu</title>
     <link rel="stylesheet" href="menu.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css'>
 </head>
 <body>
 
@@ -38,7 +39,7 @@
         <div class="divider"></div>
         <div class="cards">
             <div class="card">
-                <img src="images/special offer.jpg" alt="">
+                <img src="images/special offer.jpg" alt="" class="clickable-img">
             </div>
         </div>
     </section>
@@ -48,8 +49,8 @@
         <h2>Ice Twin Sundae, Float, Coffee’s</h2>
         <div class="divider"></div>
         <div class="cards">
-            <div class="card"><img src="images/Ice Twin Sundae1.jpg" alt=""></div>
-            <div class="card"><img src="images/its2.jpg" alt=""></div>
+            <div class="card"><img src="images/Ice Twin Sundae1.jpg" alt="" class="clickable-img"></div>
+            <div class="card"><img src="images/its2.jpg" alt="" class="clickable-img"></div>
         </div>
     </section>
 
@@ -58,11 +59,17 @@
         <h2>Ice Twin Croffles</h2>
         <div class="divider"></div>
         <div class="cards">
-            <div class="card"><img src="images/croffles.jpg" alt=""></div>
+            <div class="card"><img src="images/croffles.jpg" alt="" class="clickable-img"></div>
         </div>
     </section>
 
 </main>
+
+<!-- IMAGE LIGHTBOX MODAL -->
+<div id="imageModal" class="image-modal">
+    <span class="close-btn" onclick="closeImageModal()">&times;</span>
+    <img id="modalImage" src="" alt="">
+</div>
 
 <!-- FOOTER -->
 <footer>
@@ -78,16 +85,43 @@
         </ul>
 
         <div class="footer-icons">
-            <i>📘</i>
-            <i>📸</i>
-            <i>🐦</i>
+            <a href="https://www.facebook.com/profile.php?id=61576351366880" target="_blank" aria-label="Facebook"><i class='fa-brands fa-facebook'></i></a>
+            <a href="https://www.instagram.com/your-ice-twin-page" target="_blank" aria-label="Instagram"><i class='fa-brands fa-instagram'></i></a>
+            <a href="mailto:dvocal030@gmail.com" aria-label="Email"><i class='fa-regular fa-envelope'></i></a>
         </div>
 
         <p class="footer-text">© 2022 All Rights Reserved.</p>
-        <p class="footer-number">(63) 0948 553 8642</p>
+        <p class="footer-number"><a href="tel:+639048553642">(63) 0948 553 8642</a></p>
 
     </div>
 </footer>
+
+<script>
+    const clickableImages = document.querySelectorAll('.clickable-img');
+    const modal = document.getElementById('imageModal');
+    const modalImg = document.getElementById('modalImage');
+
+    clickableImages.forEach(img => {
+        img.addEventListener('click', function() {
+            modal.classList.add('active');
+            modalImg.src = this.src;
+        });
+    });
+
+    function closeImageModal() {
+        modal.classList.remove('active');
+    }
+
+    modal.addEventListener('click', function(event) {
+        if (event.target === modal) {
+            closeImageModal();
+        }
+    });
+</script>
+
+</body>
+</html>    });
+</script>
 
 </body>
 </html>

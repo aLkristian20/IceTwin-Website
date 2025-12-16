@@ -38,8 +38,9 @@ body {
 }
 
 .nav-links .active a {
-    border-bottom: 2px solid white;
-    padding-bottom: 4px;
+    background: #0e742c;
+    padding: 6px 12px;
+    border-radius: 4px;
 }
 
 /* CONTACT SECTION */
@@ -175,4 +176,15 @@ footer {
     margin-top: 5px;
     font-size: 13px;
     color: #2faa45;
+}
+
+.footer-number a {
+    text-decoration: none;
+    color: #2faa45;
+    transition: color 0.2s;
+}
+
+.footer-number a:hover {
+    color: #0e742c;
+    text-decoration: underline;
 }
