@@ -2,19 +2,19 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Contact Us – Ice Twin</title>
+    <title>Ice Twin Contact Us</title>
     <link rel="stylesheet" href="contact.css">
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css'>
 </head>
 <body>
 
-<!-- NAVBAR (SAME AS OTHER PAGES) -->
-<header class="navbar">
+<!-- NAVBAR -->
+<div class="navbar">
     <div class="nav-container">
-        <img src="images/logoit.jpg" class="logo" alt="Ice Twin Logo">
+        <img src="images/logoit.jpg" class="logo">
 
         <ul class="nav-links">
-            <li><a href="index.html">ABOUT US</a></li>
+            <li><a href="about-team.html">ABOUT US</a></li>
             <li><a href="menu.html">MENU</a></li>
             <li><a href="store-location.html">STORE LOCATION</a></li>
             <li><a href="franchising.html">FRANCHISING</a></li>
@@ -22,54 +22,52 @@
             <li class="active"><a href="contact.html">CONTACT US</a></li>
         </ul>
     </div>
-</header>
+</div>
 
-<!-- CONTACT SECTION -->
-<section class="contact-section">
+<!-- CONTACT -->
+<div class="contact-container">
 
     <div class="contact-left">
-        <h1>Connect with Us</h1>
-        <p class="contact-sub">We're here for you. Feel free to reach out to us.</p>
+        <h2>Connect with Us</h2>
+        <p>We're here for you. Feel free to reach out to us.</p>
+         <div class="socials">
+               <a href="https://www.facebook.com/profile.php?id=61576351366880" target="_blank" aria-label="Facebook"><i class='fa-brands fa-facebook'></i></a>
+             <a href="https://www.instagram.com/your-ice-twin-page" target="_blank" aria-label="Instagram"><i class='fa-brands fa-instagram'></i></a>
+             <a href="https://www.tiktok.com/@ice.twin7" target="_blank" aria-label="TikTok"><i class='fab fa-tiktok'></i></a>
+         </div>
 
-        <h3>Follow us</h3>
-        <div class="socials">
-              <a href="https://www.facebook.com/profile.php?id=61576351366880" target="_blank" aria-label="Facebook"><i class='fa-brands fa-facebook'></i></a>
-            <a href="https://www.instagram.com/your-ice-twin-page" target="_blank" aria-label="Instagram"><i class='fa-brands fa-instagram'></i></a>
-            <a href="https://www.tiktok.com/@ice.twin7" target="_blank" aria-label="TikTok"><i class='fab fa-tiktok'></i></a>
-        </div>
-
-        <h3>Contact Us</h3>
         <p class="business-name">Ice Twin IceCream Business</p>
-        <p class="address">📍 85b Crispulo Aguinaldo Street<br>
-            (in front of Mega Hardware)<br>
-            Salitran 2 Dasmariñas, Cavite</p>
+        <p>📍 85b Crispulo Aguinaldo Street<br>
+           Salitran 2 Dasmariñas, Cavite</p>
     </div>
 
     <div class="contact-right">
-        <h2>Get in Touch</h2>
+        <form class="contact-form" action="send_contact.php" method="POST">
 
-        <form class="contact-form">
-            <input type="text" placeholder="Full Name" required>
-            <input type="text" placeholder="City">
-            <input type="text" placeholder="Contact Number">
-            <input type="email" placeholder="Email Address" required>
-            <textarea placeholder="Send Us Message"></textarea>
+            <h2>Get in Touch</h2>
+
+            <input type="text" name="full_name" placeholder="Full Name" required>
+            <input type="text" name="city" placeholder="City" required>
+            <input type="text" name="contact" placeholder="Contact Number" required>
+            <input type="email" name="email" placeholder="Email Address" required>
+            <textarea name="message" placeholder="Send Us Message" required></textarea>
+
             <button type="submit">Submit</button>
         </form>
     </div>
 
-</section>
+</div>
 
-<!-- FOOTER (SAME AS OTHER PAGES) -->
+<!-- FOOTER -->
 <footer>
     <div class="footer-container">
 
         <ul class="footer-links">
             <li><a href="index.html">ABOUT US</a></li>
             <li><a href="menu.html">MENU</a></li>
-            <li><a href="store-location.html">STORE LOCATION</a></li>
+            <li class=""><a href="store-location.html">STORE LOCATION</a></li>
             <li><a href="franchising.html">FRANCHISING</a></li>
-            <li><a href="careers.html">CAREERS</a></li>
+            <li class=""><a href="careers.html">CAREERS</a></li>
             <li class="active"><a href="contact.html">CONTACT US</a></li>
         </ul>
 
@@ -80,7 +78,8 @@
         </div>
 
         <p class="footer-text">© 2025 All Rights Reserved.</p>
-        <p class="footer-number"><a href="tel:+639045539642">(63) 0945 553 9642</a></p>
+        <p class="footer-number"><a href="tel:+639048553642">(63) 0948 553 8642</a></p>
+
     </div>
 </footer>
 

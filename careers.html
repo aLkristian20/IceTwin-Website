@@ -2,19 +2,19 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Careers – Ice Twin</title>
+    <title>Ice Twin Careers</title>
     <link rel="stylesheet" href="careers.css">
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css'>
 </head>
 <body>
 
-<!-- NAVBAR (SAME AS FRANCHISING) -->
-<header class="navbar">
+<!-- NAVBAR -->
+<div class="navbar">
     <div class="nav-container">
-        <img src="images/logoit.jpg" class="logo">
+        <img src="images/logoit.jpg" alt="Ice Twin" class="logo">
 
         <ul class="nav-links">
-            <li><a href="index.html">ABOUT US</a></li>
+            <li><a href="about-team.html">ABOUT US</a></li>
             <li><a href="menu.html">MENU</a></li>
             <li><a href="store-location.html">STORE LOCATION</a></li>
             <li><a href="franchising.html">FRANCHISING</a></li>
@@ -22,53 +22,55 @@
             <li><a href="contact.html">CONTACT US</a></li>
         </ul>
     </div>
-</header>
+</div>
 
-<!-- CAREERS CONTENT -->
-<section class="careers-section">
+<!-- CONTENT -->
+<div class="careers-container">
+
     <div class="careers-left">
         <h1>Apply Now At Ice Twin.</h1>
-        <p class="careers-text">
-            Chill vibes, sweet dreams, and a passion for perfection — if you're ready to scoop smiles and serve happiness, Ice Twin is the place for you!
+        <p>
+            "Chill vibes, sweet dreams, and a passion for perfection –
+            if you’re ready to scoop up smiles and serve happiness,
+            Ice Twin is the place for you!"
         </p>
 
-        <div class="careers-logo">
-            <img src="images/logoit.jpg" alt="Ice Twin Logo">
-        </div>
+        <img src="images/logoit.jpg" class="careers-logo">
     </div>
 
     <div class="careers-right">
-        <h2>Get in Touch</h2>
+        <form class="careers-form" action="submit.php" method="POST" enctype="multipart/form-data">
 
-        <form class="careers-form">
-            <input type="text" placeholder="Full Name" required>
-            <input type="text" placeholder="Address">
-            <input type="text" placeholder="Contact Number">
-            <input type="email" placeholder="Email Address" required>
-            <input type="text" placeholder="Position applying for">
-            <textarea placeholder="Send Us Message"></textarea>
+            <h2>Get in Touch</h2>
 
-            <label class="upload">
-                Upload your CV/Resume
-                <input type="file">
-            </label>
+            <input type="text" name="full_name" placeholder="Full Name" required>
+            <input type="text" name="address" placeholder="Address" required>
+            <input type="text" name="contact" placeholder="Contact Number" required>
+            <input type="email" name="email" placeholder="Email Address" required>
+            <input type="text" name="position" placeholder="Position applying for" required>
+
+            <textarea name="message" placeholder="Send Us Message" required></textarea>
+
+            <label class="upload-label">Upload your CV/Resume</label>
+            <input type="file" name="cv" required>
 
             <button type="submit">Submit</button>
+
         </form>
     </div>
-</section>
 
-<!-- FOOTER (SAME AS FRANCHISING) -->
+</div>
+<!-- FOOTER -->
 <footer>
     <div class="footer-container">
 
         <ul class="footer-links">
             <li><a href="index.html">ABOUT US</a></li>
             <li><a href="menu.html">MENU</a></li>
-            <li><a href="store-location.html">STORE LOCATION</a></li>
+            <li class=""><a href="store-location.html">STORE LOCATION</a></li>
             <li><a href="franchising.html">FRANCHISING</a></li>
             <li class="active"><a href="careers.html">CAREERS</a></li>
-            <li><a href="contact.html">CONTACT US</a></li>
+            <li class=""><a href="contact.html">CONTACT US</a></li>
         </ul>
 
         <div class="footer-icons">
@@ -79,8 +81,8 @@
 
         <p class="footer-text">© 2025 All Rights Reserved.</p>
         <p class="footer-number"><a href="tel:+639048553642">(63) 0948 553 8642</a></p>
+
     </div>
 </footer>
-
 </body>
 </html>

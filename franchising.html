@@ -8,11 +8,9 @@
 </head>
 <body>
 
-<!-- NAVBAR -->
 <header class="navbar">
     <div class="nav-container">
         <img src="images/logoit.jpg" class="logo">
-
         <ul class="nav-links">
             <li><a href="index.html">ABOUT US</a></li>
             <li><a href="menu.html">MENU</a></li>
@@ -24,46 +22,38 @@
     </div>
 </header>
 
-<!-- CONTENT -->
 <section class="franchise-section">
     <h1>Franchising</h1>
     <p class="subtitle">Indulge in Franchise Delights: Taste the Sweet Rewards!</p>
 
     <div class="card-wrapper">
-        <img src="images/franchising.jpg" class="franchise-img clickable-img">
+        <img src="images/franchising.jpg" class="franchise-img">
         <p class="card-title">Ice Twin Ice Cream</p>
     </div>
 
     <button class="franchise-btn" onclick="openModal()">Franchise Now</button>
 </section>
 
-<!-- MODAL OVERLAY -->
+<!-- MODAL -->
 <div class="overlay" id="overlay">
-    <div class="modal" id="modal">
+    <div class="modal">
+        <span class="close-btn" onclick="closeModal()">&times;</span>
 
         <h2>Get in Touch</h2>
 
-        <input type="text" id="name" placeholder="Full Name">
-        <input type="text" id="address" placeholder="Address">
-        <input type="text" id="contact" placeholder="Contact Number">
-        <input type="email" id="email" placeholder="Your Businessmail Address">
-        <input type="date" id="date">
-        <textarea id="message" placeholder="Send Us Message"></textarea>
+        <form action="send_franchise.php" method="POST">
+    <input type="text" id="name" name="full_name" placeholder="Full Name" required>
+    <input type="text" id="address" name="address" placeholder="Address" required>
+    <input type="text" id="contact" name="contact" placeholder="Contact Number" required>
+    <input type="email" id="email" name="email" placeholder="Your Businessmail Address" required>
+    <input type="date" id="date" name="date_applied" required>
+    <textarea id="message" name="message" placeholder="Send Us Message" required></textarea>
+    <button type="submit" class="send-btn">Send</button>
+        </form>
 
 
-        <button class="send-btn" onclick="sendMessage()">Send</button>
-
-        <!-- SUCCESS MESSAGE -->
-        <div class="success" id="success">
-            Message Sent!
-        </div>
+        <div class="success" id="success">Message Sent!</div>
     </div>
-</div>
-
-<!-- IMAGE LIGHTBOX MODAL -->
-<div id="imageModal" class="image-modal">
-    <span class="close-btn" onclick="closeImageModal()">&times;</span>
-    <img id="modalImage" src="" alt="">
 </div>
 
 <!-- FOOTER -->
@@ -73,7 +63,7 @@
         <ul class="footer-links">
             <li><a href="index.html">ABOUT US</a></li>
             <li><a href="menu.html">MENU</a></li>
-            <li><a href="store-location.html">STORE LOCATION</a></li>
+            <li class=""><a href="store-location.html">STORE LOCATION</a></li>
             <li class="active"><a href="franchising.html">FRANCHISING</a></li>
             <li><a href="careers.html">CAREERS</a></li>
             <li><a href="contact.html">CONTACT US</a></li>
@@ -90,29 +80,6 @@
 
     </div>
 </footer>
-
-<script>
-    const clickableImages = document.querySelectorAll('.clickable-img');
-    const modal = document.getElementById('imageModal');
-    const modalImg = document.getElementById('modalImage');
-
-    clickableImages.forEach(img => {
-        img.addEventListener('click', function() {
-            modal.classList.add('active');
-            modalImg.src = this.src;
-        });
-    });
-
-    function closeImageModal() {
-        modal.classList.remove('active');
-    }
-
-    modal.addEventListener('click', function(event) {
-        if (event.target === modal) {
-            closeImageModal();
-        }
-    });
-</script>
 
 <script src="franchising.js"></script>
 </body>

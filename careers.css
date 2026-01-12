@@ -1,3 +1,4 @@
+/* GLOBAL */
 body {
     margin: 0;
     background: #fff9ec;
@@ -5,7 +6,9 @@ body {
     color: #333;
 }
 
-/* NAVBAR (SAME AS FRANCHISING) */
+/* =========================
+   NAVBAR (COPIED EXACTLY)
+   ========================= */
 .navbar {
     background: #058f33;
     padding: 20px 0;
@@ -43,82 +46,84 @@ body {
     border-radius: 4px;
 }
 
-/* CAREERS SECTION */
-.careers-section {
+/* =========================
+   CAREERS PAGE CONTENT
+   ========================= */
+.careers-container {
+    width: 90%;
+    margin: 60px auto;
     display: flex;
-    justify-content: center;
-    gap: 60px;
-    padding: 70px 60px;
-    max-width: 1100px;
-    margin: 0 auto;
+    gap: 80px;
 }
 
+/* LEFT SIDE */
 .careers-left {
-    flex: 1;  /* Take equal space */
-    width: 380px;  /* Match the right box width */
+    width: 50%;
 }
 
 .careers-left h1 {
-    color: #2faa45;
-    font-size: 34px;
+    color: #26a143;
+    font-size: 30px;
+    margin-bottom: 15px;
 }
 
-.careers-text {
-    
-    font-size: 16px;
+.careers-left p {
+    line-height: 1.6;
+    font-size: 15px;
 }
 
-.careers-logo img {
-    width: 240px;
+.careers-logo {
+    width: 300px;
+    margin-top: 40px;
 }
 
-.careers-right {
-    flex: 1;  /* Take equal space */
-    width: 380px;
-    background: #2faa45;
+/* RIGHT FORM */
+.careers-form {
+    background: #32ad44;
     padding: 30px;
-    border-radius: 20px;
+    border-radius: 25px;
+    width: 420px;
     color: white;
 }
 
-.careers-right h2 {
-    margin-bottom: 15px;
+.careers-form h2 {
+    margin-top: 0;
 }
 
 .careers-form input,
 .careers-form textarea {
     width: 100%;
+    margin-bottom: 12px;
     padding: 10px;
-    margin-bottom: 10px;
-    border-radius: 8px;
+    border-radius: 10px;
     border: none;
+    font-size: 14px;
 }
 
 .careers-form textarea {
-    height: 90px;
+    height: 100px;
+    resize: none;
 }
 
-.upload {
+.upload-label {
     font-size: 13px;
-    display: block;
-    margin-bottom: 12px;
-}
-
-.upload input {
     margin-top: 5px;
+    display: block;
 }
 
 .careers-form button {
-    background: white;
-    color: #2faa45;
+    margin-top: 15px;
+    padding: 10px 25px;
     border: none;
-    padding: 10px 20px;
     border-radius: 20px;
+    background: white;
+    color: #32ad44;
     font-weight: bold;
     cursor: pointer;
 }
 
-/* FOOTER (SAME AS FRANCHISING) */
+
+ /* FOOTER */
 footer {
     border-top: 1px solid #c4c4c4;
     padding: 25px 0;
